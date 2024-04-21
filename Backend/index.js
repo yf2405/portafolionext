@@ -1,6 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -11,8 +12,8 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'yersonstuardlittle062@gmail.com',
-    pass: 'cmmx wemy dwfz msii',
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -21,7 +22,7 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: 'yersonstuardlittle062@gmail.com',
+    to: process.env.EMAIL_USER,
     subject: 'Nuevo mensaje de tu portafolio',
     text: `Nombre: ${name}\nCorreo: ${email}\nMensaje: ${message}`,
   };
