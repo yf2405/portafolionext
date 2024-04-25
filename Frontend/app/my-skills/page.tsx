@@ -20,7 +20,7 @@ const Page = () => {
               {" "}
               &{" "}
             </span>
-            Technologies
+            Tecnologías
           </h1>
           <p className="text-gray-400 text-[20px]">
           últimas Tecnologías
