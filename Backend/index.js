@@ -17,6 +17,11 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Agrega esta ruta GET para manejar solicitudes GET a /send-email
+app.get('/send-email', (req, res) => {
+  res.status(405).send('Method Not Allowed');
+});
+
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
 
