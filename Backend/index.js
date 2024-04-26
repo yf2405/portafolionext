@@ -17,6 +17,11 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.use(cors({
+  origin: process.env.CORSWEB,
+}));
+
+
 // Agrega esta ruta GET para manejar solicitudes GET a /send-email
 app.get('/send-email', (req, res) => {
   res.status(405).send('Method Not Allowed');
