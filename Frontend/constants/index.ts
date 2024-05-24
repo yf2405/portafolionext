@@ -106,11 +106,11 @@ export const Projects = [
     iconGit: FaGithub
   },
   {
-    title: "Poke-Api",
+    title: "E-commerce-Xcosas",
     text: "Api que trae gran unformacion de pokemones en forma de cartas, mostrando sus evoluciones. Creado con Javascript.",
-    src: "/poke-api.png",
+    src: "/Xcosas-Project.png",
     git: "https://github.com/yf2405/api-pokemon",
-    Link: "https://yf2405.github.io/api-pokemon/",
+    Link: "https://xcosas.up.railway.app/home",
     iconGit: FaGithub
   },
   {
