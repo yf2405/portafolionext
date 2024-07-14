@@ -1,5 +1,6 @@
 "use client"
 
+import DownloadResumeButton from "@/components/Resume";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,22 +12,24 @@ export default function Home() {
         style={{ backgroundImage: "url(/night-sky.jpg)" }}
       >
         <div className="pl-10 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-          <h1 className="text-[50px] text-white font-semibold">
-          Haz todo posible con
+          <h1 className="text-[50px] font-semibold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
-              {" "}
-              Desarrollador Web
+
+              Desarrollador FullStack
             </span>
           </h1>
-          <p className="text-gray-200 hidden md:block">
-          Quiero ayudarte a cumplir tus sueños con ayuda de mis conocimientos y mi pasión.
+          <p className="text-2xl font-bold text-gray-200 bg-clip-text bg-text-gradient  hidden md:block">
+            ⚖️ Motivación y disciplina van de la mano
           </p>
+          <div className=" hidden md:block">
+            <DownloadResumeButton />
+          </div>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
-              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative text-transparent bg-gradient-to-r from-purple-500 to-red-500 px-5 py-3 text-lg text-white max-w-[200px]"
             >
-           Saber más
+              Saber más
             </Link>
             <Link
               href="/my-projects"
@@ -39,34 +42,18 @@ export default function Home() {
               href="/contact-me"
               className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Contáctame
             </Link>
+
           </div>
+
+        </div>
+        <div className="absolute flex z-[20] left-5 flex-col md:hidden gap-5">
+          <DownloadResumeButton />
         </div>
       </div>
 
-      <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
-        <Link
-          href="/my-skills"
-          className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          Saber mas
-        </Link>
-
-        <Link
-          href="/my-projects"
-          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-         Mis proyectos
-        </Link>
-        <Link
-          href="/contact-me"
-          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
-        >
-          Contáctame
-        </Link>
-      </div>
 
       <div className="absolute bottom-0 right-0 z-[10]">
         <Image

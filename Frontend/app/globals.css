@@ -5,25 +5,27 @@
 
 
 html {
-    /* height: 100%; */
-  }
-  html,
-  body {
-    overflow: hidden; 
-  }
-  main {
-    background: #393a47;
+  /* height: 100%; */
+}
 
+html,
+body {
+  overflow: hidden;
+  background: linear-gradient(143deg, #000, #012939 50%, #000);
+}
+
+main {
+  background: #393a47;
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #901cf5;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
-  
-  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-  .swiper-pagination-horizontal.swiper-pagination-bullets
-    .swiper-pagination-bullet {
-    background-color: #901cf5;
-  }
-  
-  @layer utilities {
-    .text-balance {
-      text-wrap: balance;
-    }
-  }
+}
