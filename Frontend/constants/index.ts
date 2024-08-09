@@ -1,4 +1,5 @@
 import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+import { BsRobot } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
 export const SkillData = [
@@ -143,5 +144,10 @@ export const NavLinks = [
     name: "/contact-me",
     icon: RxClipboard,
     link: "/contact-me",
+  },
+  {
+    name: "/chatBot",
+    icon: BsRobot,
+    link: "/chatBot",
   },
 ];
