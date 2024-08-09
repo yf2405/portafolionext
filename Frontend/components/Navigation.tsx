@@ -28,8 +28,8 @@ const Navigation = () => {
   }, [isRouting])
   return (
     <div
-      style={{ left: "20%" }}
-      className="fixed z-[50] bottom-0 w-[50%] md:w-[20%] max-h-[50px] rounded-full flex justify-between items-center border  bg-gray-400 bg-opacity-10 border-white px-4 py-7"
+      
+      className="fixed z-[50] bottom-0 w-[100%] md:w-[5%] max-h-[50px] md:min-h-72  rounded-full flex md:flex-col justify-between md:m-6  items-center border  bg-gray-400 bg-opacity-10 border-white px-4 py-7"
     >
 
       {isRouting && <Transition />}
