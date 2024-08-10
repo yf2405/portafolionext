@@ -29,7 +29,7 @@ const Navigation = () => {
   return (
     <div
       
-      className="fixed z-[50] bottom-0 w-[100%] md:w-[5%] max-h-[50px] md:min-h-72  rounded-full flex md:flex-col justify-between md:m-6  items-center border  bg-gray-400 bg-opacity-10 border-white px-4 py-7"
+      className="fixed z-[50] bottom-0 w-[100%] md:w-[5%] max-h-[50px] md:min-h-72  md:rounded-full rounded-t-3xl flex md:flex-col justify-between md:m-6  items-center md:border  bg-gray-400 bg-opacity-10 border-white px-4 py-7"
     >
 
       {isRouting && <Transition />}

@@ -12,8 +12,8 @@ export default function Home() {
         style={{ backgroundImage: "url(/night-sky.jpg)" }}
       >
         <div className="pl-10 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
-          <h1 className="text-[50px] font-semibold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r ">
+          <h1 className="text-[45px]  font-semibold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 ">
 
               Desarrollador FullStack
             </span>
