@@ -110,8 +110,8 @@ export const Projects = [
     title: "E-commerce-Xcosas",
     text: "La página web representa una solución integral para el comercio electrónico de productos exclusivos y difíciles de encontrar en Colombia. Login y Crud, solo para administrador.",
     src: "/Xcosas-Project.png",
-    git: "https://github.com/yf2405/api-pokemon",
-    Link: "https://xcosas.up.railway.app/home",
+    git: "https://github.com/yf2405/proyect-xcosas",
+    Link: "https://xcosasthing.vercel.app/home",
     iconGit: FaGithub
   },
   {

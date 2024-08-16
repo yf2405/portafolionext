@@ -10,7 +10,6 @@ export async function POST(req: Request) {
   model: google('models/gemini-1.5-pro'),
   system: prompt,
   messages: [
-    { role: 'system', content: 'You are a helpful assistant.' },
     { role: 'assistant', content: bio },
     { role: 'assistant', content: projects },
     { role: 'assistant', content: skills },
